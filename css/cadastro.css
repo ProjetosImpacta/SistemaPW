@@ -1,0 +1,40 @@
+body{
+    background-color: purple;
+    color: black;
+
+}
+
+h1{
+    color: greenyellow;
+    text-align: center;
+    margin-top: 26px;
+
+}
+
+form{
+    text-align: center;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=number], input[type=date], select{
+    width: 46%;
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+    border-radius: 16px;
+    margin-top: 16px;
+
+}
+
+input[type=checkbox], select{
+    color: white;
+}
+
+
+button{
+    background-color: greenyellow;
+    width: 20%;
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+    border-radius: 16px;
+    
+}
+
