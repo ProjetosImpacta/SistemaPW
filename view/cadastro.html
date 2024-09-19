@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Formulário</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/cadastro.css'>
+    <script src='../js/cadastro.js'></script>
+</head>
+    <body>
+        <h1>Efetuar Cadastro:</h1>
+     
+            <form>
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Nome Completo"/>
+
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="E-mail"/>
+
+                <label for="password"></label>
+                <input type="password" name="password" id="password" placeholder="PassWord"/>
+
+                <label for="telefone"></label>
+                <input type="number" name="telefone" id="telefone" placeholder="Celular"/>
+
+                <label for="cpf_cnpj"></label>
+                <input type="text" name="cpf_cnpj" id="cpf_cnpj"/ placeholder="CPF ou CNPJ">
+
+                <label for="birthday"></label>
+                <input type="date" name="birthday" id="birthday"/>
+                <br>
+                <label for="terms">Termos </label>
+                <input type="checkbox" name="terms" id="terms"/>
+                <br>
+
+                <!-- <input type="button" value="Cadastrar" onclick="cadastro()"/> -->
+                <button type="button" onclick="cadastro()"><strong>Cadastrar</strong></button>
+            </form>
+    
+
+    </body>
+</html>
