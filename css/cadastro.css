@@ -1,0 +1,44 @@
+body{ 
+    font-family: 'Franklin Gothic Medium';
+    color: rgb(165, 21, 43);
+    background-image: url(../view/img/kittycadastro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+}
+input{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 90%;
+    padding: 10px;
+}
+a{
+    color: rgb(165, 21, 43);
+}
+.butao{
+    background-color: rgb(165, 21, 43);
+    border: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+.butao:hover{
+    background-color: rgb(235, 69, 69);
+}
+custom{
+    display: inline-block;
+}
