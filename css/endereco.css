@@ -8,5 +8,72 @@
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1280px) {
+    body {
+        font-family: 'Franklin Gothic Medium';
+        color: rgb(165, 21, 43);
+        background-image: url(../view/img/kittycadastro.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
     
+    .styled {
+        background-color: rgb(165, 21, 43);
+        border: none;
+        color: white;
+        font-family: 'Franklin Gothic Medium';
+        padding: 20px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .styled:hover {
+        background-color: rgb(235, 69, 69);
+    }
+    
+    a {
+        color: rgb(165, 21, 43);
+    }
+    
+    .custom {
+        display: inline-block;
+    }
+    
+    form {
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 50px;
+    }
+    
+    /* Estilos para dispositivos entre 768px e 1280px */
+    @media (min-width: 768px) and (max-width: 1280px) {
+        form {
+            width: 70%;
+            padding-left: 40px; 
+            padding-right: 40px; 
+            padding-top: 25px; 
+            padding-bottom: 25px; 
+            border-radius: 25px; 
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.5); 
+        }
+    
+        input {
+            width: calc(100% - 20px);
+            font-size: 16px;
+            padding: 12px; 
+            border-radius: 10px; 
+        }
+    
+        .styled {
+            padding: 18px; 
+            font-size: 18px;
+            border-radius: 10px; 
+        }
+    }
 }
