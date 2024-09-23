@@ -6,57 +6,35 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../css/cadastro.css'>
     <script src='../script/cadastro.js'></script>
 </head>
-    <body>
-        <h1>Efetuar Cadastro:</h1>
-     
-            <form>
-                <div class="fundo_especial">
-                    <label for="name321"></label>
-                    <input type="text" name="name321" id="name321" placeholder="Nome Completo"/>
-                </div>
+<body>
+    <form>
+        <h1>Crie sua conta</h1>
+        
+            <label for="name"></label><br>
+            <input type="text" name="name" id="name" placeholder="Nome"/>
+            <br><br>
+            <label for="email"></label><br>
+            <input type="email" name="email" id="email" placeholder="E-mail"/>
+            <br><br>
+            <label for="password"></label><br>
+            <input type="password" name="password" id="password" placeholder="Senha"/>
+            <br><br>
+            <label for="cpf_cnpj"></label><br>
+            <input type="text" name="cpf_cnpj" id="cpf_cnpj" placeholder="CPF ou CNPJ"/>
+            <br><br>
+            <label for="birthday"></label><br>
+            <input type="date" name="birthday" id="birthday" placeholder="Data de Nascimento"/>
+            <br><br>
+            
+            <label for="terms">Li e concordo com os <a href="termos.html">Termos de Uso</a>:</label>
+        
 
+        <div class="custom">
+            <input type="checkbox" name="terms" id="terms"/>
+        </div>
+        <br><br>
 
-                <div>
-                    <label for="email"></label>
-                    <input type="email" name="email" id="email" placeholder="E-mail"/>
-                </div>
-
-
-                <div>
-                    <label for="password"></label>
-                    <input type="password" name="password" id="password" placeholder="PassWord"/>
-                </div>
-
-
-                <div>
-                    <label for="telefone"></label>
-                    <input type="number" name="telefone" id="telefone" placeholder="Celular"/>
-                </div>
-
-
-                <div>
-                    <label for="cpf_cnpj"></label>
-                    <input type="text" name="cpf_cnpj" id="cpf_cnpj"/ placeholder="CPF ou CNPJ">
-                </div>
-
-
-                <div>
-                    <label for="birthday"></label>
-                    <input type="date" name="birthday" id="birthday"/>
-                </div>
-
-                <br>
-                <div class="fundo_button">
-                    <label for="terms">Termos </label>
-                    <input type="checkbox" name="terms" id="terms"/>
-                </div>
-
-                <br>
-
-                <!-- <input type="button" value="Cadastrar" onclick="cadastro()"/> -->
-                <button type="button" onclick="cadastro()"><strong>Cadastrar</strong></button>
-            </form>
-    
-
-    </body>
+        <input class="styled" type="button" value="Continuar" onclick="cadastrousuario()">
+    </form>
+</body>
 </html>
