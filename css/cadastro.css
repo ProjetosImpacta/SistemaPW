@@ -1,9 +1,15 @@
+/* <<<<<< HEAD */
+
 body{ 
     font-family: 'Franklin Gothic Medium';
     color: rgb(165, 21, 43);
     background-image: url(../view/img/kittycadastro.png);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 form{
     background-color: rgba(0, 0, 0, 0.8);
@@ -41,4 +47,158 @@ a{
 }
 custom{
     display: inline-block;
+}
+
+/* celular */
+@media (min-width: 320px) and (max-width: 430px) {
+    body {
+        font-family: 'Franklin Gothic Medium';
+        color: #532B36;
+        background-image: url(../view/img/kittycadastro.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .styled {
+        background-color: #BA424E;
+        border: none;
+        color: white;
+        font-family: 'Franklin Gothic Medium';
+        font-size: 18px;
+        padding: 15px;
+        width: 90%;
+        padding: 15px 0;
+        border-radius: 40px;
+        font-size: 18px;
+        transition-duration: .4s;
+        box-sizing: border-box;
+    }
+
+    .styled:hover {
+        background-color: rgb(235, 69, 69);
+    }
+
+    a {
+        color: #532B36;
+    }
+
+    .custom {
+        display: inline-block;
+    }
+
+    form {
+        background-color: #F5F2F0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 60%;
+        border-radius: 20px;
+        box-shadow: none;
+    }
+
+    input {
+        border:none;
+        outline: none;
+        font-size: 16px;
+        width: calc(100% - 20px);
+        padding: 16px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        transition: border-color 0.3s ease;
+        box-sizing: border-box;
+    }
+
+    input:hover,
+    input:focus {
+        border-color: rgb(165, 21, 43);
+        box-shadow: inset 0px 0px 5px rgba(165, 21, 43, 0.5);
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1280px) {
+    body {
+        font-family: 'Franklin Gothic Medium';
+        color: #532B36;
+        background-image: url(../view/img/kittycadastro.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .styled {
+        background-color: #BA424E;
+        border: none;
+        color: white;
+        font-family: 'Franklin Gothic Medium';
+        font-size: 20px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .styled:hover {
+        background-color: rgb(235, 69, 69);
+    }
+
+    a {
+        color: #532B36;
+    }
+
+    .custom {
+        display: inline-block;
+    }
+
+    form {
+        background-color: #F5F2F0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 50px;
+        width: 60%;
+        border-radius: 20px;
+        box-shadow: none;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        font-size: 20px;
+        width: calc(100% - 20px);
+        padding: 20px;
+        border-radius: 20px;
+        margin-bottom: 15px;
+        background-color: rgba(255, 255, 255, 0.9);
+        transition: border-color 0.3s ease;
+    }
+
+    input:hover,
+    input:focus {
+        border-color: rgb(165, 21, 43);
+        box-shadow: inset 0px 0px 5px rgba(165, 21, 43, 0.5);
+    }
+
+    .styled {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 40px;
+        font-size: 22px;
+        transition-duration: .4s;
+    }
 }

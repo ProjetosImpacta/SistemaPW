@@ -1,10 +1,9 @@
 body{
     font-family: 'Franklin Gothic Medium';
     color: rgb(165, 21, 43);
-    background-image: url(../view/img/kittylogin.png);
+    background-image: url(../view/img/kittydelivery.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -110px;
+    background-size: auto;
 }
 div{
     background-color: rgba(0, 0, 0, 0.8);
@@ -35,4 +34,28 @@ button:hover{
 }
 a{
     color: rgb(165, 21, 43);
+}
+
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1280px) {
+    div {
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 60px;
+        border-radius: 30px;
+        width: 80%;
+    }
+
+    input {
+        font-size: 16px;
+        padding: 15px; 
+        width: calc(100% - 20px);
+    }
+
+    button {
+        padding: 18px;
+        font-size: 18px;
+    }
 }
