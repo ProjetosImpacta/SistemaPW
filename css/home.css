@@ -1,5 +1,13 @@
-
-
+.centralMessage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
 
 
 /* Responsividade: */
