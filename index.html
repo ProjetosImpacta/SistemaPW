@@ -1,21 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="shortcut icon" href="view/img/icone.png" type="image/x-icon">
-    <title>Kitty Delivery</title>
-    
+    <title>Home</title>
+    <link rel="shortcut icon" href="../view/img/icone.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/home.css" media="screen" /> 
 </head>
-<body class="centralMessage">
-    <h2>Página inicial do projeto</h2>
-    <div style="display: flex; gap: 10px;">
-        <a href="view/login.html"><button type="button">Tela de Login</button></a>
-        <a href="view/cadastro.html"><button type="button">Tela de Registro</button></a>
+<body>
+    <header>
+        <img src="img/kitty.png" alt="Kitty Delivery">
+        <nav>
+            <a href="home.html"><button>Entrar</button></a>
+            <a href="home.html"><button>Cadastrar</button></a>
+        </nav>
+    </header>
+    <div class = "pesquisa">
+
+        <input type="text" placeholder="encontrar restaurantes...">
+
     </div>
-    
+
+    <div class="menu-container"> 
+        <a href="#" class="menu">Doces</a>  
+        <a href="#" class="menu">Lanches</a>  
+        <a href="#" class="menu">Japonesa</a>  
+        <a href="#" class="menu">Coreana</a>  
+    </div>
+
+    <main>
+        <section class="promo-section">
+            <picture>
+                <source media="(max-width: 600px)" srcset="img/img1.jpeg" type="image/jpeg">
+                <source media="(max-width: 800px)" srcset="img/img1.jpeg" type="image/jpeg">
+
+                <img src="img/img.jpeg" alt="Imagem flexível">
+            </picture>
+
+
+            <div class="categories">
+                <div class="category">PROMOÇÕES</div>
+                <div class="category">MERCADO</div>
+                <div class="category">KITTY FAVORITOS</div>
+                <div class="category">ENTREGA GRÁTIS</div>
+                <div class="category">TURBO</div>
+                <div class="category">CLUBE KITTY</div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h4>Kitty Delivery</h4>
+            <p><a href="contato.html">Fale Conosco</a></p>
+            <p><a href="sobre.html">Sobre Nós</a></p>
+        </div>  
+        <div class="footer-section">
+            <h4>Social</h4>
+            <p><a href="https://bluesky.com" target="_blank">Bluesky</a></p>
+            <p><a href="https://instagram.com" target="_blank">Instagram</a></p>
+        </div>
+        <img src="../view/img/icone.png">   
+        <div class="footer-section">
+            <h4>Termos e Condições</h4>
+            <p><a href="#">Política de Privacidade</a></p>
+        </div>   
+    </footer>
 </body>
-<script src="js/index.js"></script>
 </html>
