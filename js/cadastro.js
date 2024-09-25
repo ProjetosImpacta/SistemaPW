@@ -1,11 +1,10 @@
 //JS principal do projeto MVC
 const url = 'https://go-wash-api.onrender.com/api/user'
-async function cadastro(){
+async function cadastrousuario(){
     let name = document.getElementById('name').value
     let email = document.getElementById('email').value
     let cpf_cnpj = document.getElementById('cpf_cnpj').value
     let password = document.getElementById('password').value
-    let telefone = document.getElementById('telefone').value
     let birthday = document.getElementById('birthday').value
     let terms = document.getElementById('terms').checked
     let api = await fetch(url,{
