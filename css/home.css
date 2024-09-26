@@ -16,6 +16,7 @@ body {
   font-family: 'Franklin Gothic Medium';
   margin: 0;
   height: 100vh;
+  background-color: white;
 }
 
 header {
@@ -39,7 +40,7 @@ header nav {
 .pesquisa input {
   margin: auto;
   display: flex;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 10px;
   cursor: text;
   font-family: 'Franklin Gothic Medium';
@@ -130,7 +131,7 @@ header button:hover {
 .category {
   width: 30%;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #e6cec4;
   border-radius: 20px;
   text-align: center;
   font-weight: bold;
@@ -169,32 +170,30 @@ header button:hover {
 
 }
 
-footer {
-  background-color: #bc7c63;
-  color: white;
+.footer {
+  background-color: #BC7C63;
   padding: 20px;
   display: flex;
   justify-content: space-around;
-  text-align: center;
+  color: white;
+}
+.footer div {
+  width: 10%;
+}
+.footer div a { /*texos*/
+  color: white;
+  text-decoration:none;
+  display: block;
+  margin: 5px 0;
+}
+
+.footer .logo {
+  display:flex;
+  justify-content: center;
   align-items: center;
-  margin-top: 15%;
 }
-
-img {
+.footer .logo img {
   height: 50px;
-}
-
-.footer-section h4 {
-  margin-bottom: 10px;
-}
-
-.footer-section a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.footer-section a:hover {
-  text-decoration: underline;
 }
 
 
@@ -206,6 +205,7 @@ img {
     margin: 0;
     width: 100vw;
     height: 100vh;
+    background-color: #e6cec4;
   }
 
 

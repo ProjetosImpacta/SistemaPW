@@ -17,7 +17,7 @@ async function cadastrousuario(){
                 "user_type_id":1,
                 "password": password,
                 "cpf_cnpj": cpf_cnpj,
-                "terms": 1,
+                "terms": terms,
                 "birthday":"2000-10-12"    
             }
         ),
@@ -35,4 +35,5 @@ async function cadastrousuario(){
     }
     let respostaErro = await api.json();
     alert(respostaErro.data.errors.cpf_cnpj);
+    alert(respostaErro.data.errors.email);
 }
