@@ -6,20 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="shortcut icon" href="view/img/icone.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../css/home.css" media="screen" /> 
+    <link rel="stylesheet" type="text/css" href="css/home.css" media="screen" /> 
 </head>
 <body>
     <header>
         <img src="view/img/kittydeliverytexto-removebg-preview.png" alt="Kitty Delivery">
         <nav>
-            <a href="home.html"><button>Entrar</button></a>
-            <a href="home.html"><button>Cadastrar</button></a>
+            <a href="view/login.html"><button>Entrar</button></a>
+            <a href="view/cadastro.html"><button>Cadastrar</button></a>
         </nav>
     </header>
     <div class = "pesquisa">
-
         <input type="text" placeholder="encontrar restaurantes...">
-
     </div>
 
     <div class="menu-container"> 
@@ -32,12 +30,13 @@
     <main>
         <section class="promo-section">
             <picture>
-                <source media="(max-width: 600px)" srcset="img/img1.jpeg" type="image/jpeg">
-                <source media="(max-width: 800px)" srcset="img/img1.jpeg" type="image/jpeg">
+                <!-- <source media="(max-width: 600px)" srcset="img/img1.jpeg" type="image/jpeg">
+                <source media="(max-width: 800px)" srcset="img/img1.jpeg" type="image/jpeg"> -->
 
-                <div><img src="view/img/image 6.png" alt="Imagem flexível"></div>
+                <div class="promoImage">
+                    <img src="view/img/image 6.png" alt="Imagem flexível">
+                </div>
             </picture>
-
 
             <div class="categories">
                 <div class="category">PROMOÇÕES</div>
@@ -47,6 +46,7 @@
                 <div class="category">TURBO</div>
                 <div class="category">CLUBE KITTY</div>
             </div>
+        </section>
     </main>
 
     <footer>
