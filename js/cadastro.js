@@ -29,6 +29,8 @@ async function cadastrousuario(){
     if(api.ok){
         let resposta = await api.json();
         console.log(resposta);
+        alert('Cadastrado com sucesso!');
+        window.location.href = "../index.html"
         return;
     }
     let respostaErro = await api.json();
