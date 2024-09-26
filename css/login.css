@@ -68,12 +68,12 @@ a{
 @media (min-width: 0px) and (max-width: 767px) {
     body {
         font-family: 'Franklin Gothic Medium';
-        color: #532B36;
-        background-image: url(../view/img/kittycadastro.png);
+        color: #532b36;
+        background-image: url(../view/img/logincelular.jfif);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100vw;
-        height: 100vh;
+        height: 90vh;
         margin: 0;
         padding: 0;
         display: flex; 

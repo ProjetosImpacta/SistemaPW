@@ -2,7 +2,7 @@
 
 body{ 
     font-family: 'Franklin Gothic Medium';
-    color: rgb(165, 21, 43);
+    color: #532B36;
     background-image: url(../view/img/kittycadastro.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,8 +22,11 @@ form{
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 15px;
+  
 }
 input{
+      width: 100vw;
+    height: 100vh;
     border: none;
     outline: none;
     font-size: 15px;
