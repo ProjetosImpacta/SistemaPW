@@ -126,7 +126,7 @@ custom{
 }
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 1366px) {
+@media (min-width: 768px) and (max-width: 900px) {
     body {
         font-family: 'Franklin Gothic Medium';
         color: #532B36;
