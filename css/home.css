@@ -57,6 +57,14 @@ header nav {
   background-color: #BC7C63;
 }
 
+.qrCode{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
 
 header button {
