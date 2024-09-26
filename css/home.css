@@ -1,17 +1,9 @@
-/* Responsividade: */
-/* Celular */
-@media (min-width: 320px) and (max-width: 414px) {
-    
-}
-
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1280px) {
-    
-}
 
 body{
     font-family: 'Franklin Gothic Medium';
     margin: 0 ;
+    width: 100vw;
+    height: 100vh;
   }
   header {
     background-color: #bc7c63;
@@ -162,3 +154,140 @@ body{
   }
   
   
+/* Responsividade: */
+/* Celular */
+@media (min-width: 320px) and (max-width: 414px) {
+  body{
+    font-family: 'Franklin Gothic Medium';
+    margin: 0 ;
+    width: 100vw;
+    height: 100vh;
+  }
+
+    
+  .promo-section picture img {
+    max-width: 100%;
+    width:1350px;
+    height: auto;
+    display: block;
+    
+  }
+  
+  .side-menu {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+  }
+  .category {
+    width: 30%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    text-align:center;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+
+  header nav {
+    flex-direction: column; 
+    align-items:center; 
+    gap: 5px;
+    
+}
+
+.pesquisa input {
+    width: 95%; 
+    height: 35px; 
+}
+
+.category {
+    width: calc(100% - 20px); 
+    margin-bottom: 10px;
+}
+
+footer {
+    flex-direction: column; 
+    align-items:center; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1368px) {
+  body{
+    font-family: 'Franklin Gothic Medium';
+    margin: 0 ;
+    width: 100vw;
+    height: 100vh;
+  }
+
+    
+  .promo-section picture img {
+    max-width: 100%;
+    width:1350px;
+    height: auto;
+    display: block;
+    
+  }
+  
+  .side-menu {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+  }
+  .category {
+    width: 30%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    text-align:center;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+
+  header nav {
+    flex-direction: row; 
+    justify-content:flex-end;
+    gap: 15px;
+}
+
+.pesquisa input {
+    width: 80%; 
+    height: 36px; 
+}
+
+.category {
+    width: calc(25% - 15px);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer {
+    flex-direction: row; 
+    justify-content:center; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+}
