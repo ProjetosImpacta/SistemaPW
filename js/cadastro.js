@@ -7,6 +7,11 @@ async function cadastrousuario(){
     let cpf_cnpj = document.getElementById('cpf_cnpj').value;
     let birthday = document.getElementById('birthday').value;
     let terms = document.getElementById('terms');
+
+    if (password > 8){
+        alert('máximo de caracteres atingido!');
+        return
+    }
     
     if (terms.checked == true){
         let api = await fetch(url,{
@@ -37,8 +42,9 @@ async function cadastrousuario(){
         let respostaErro = await api.json();
         alert(respostaErro.data.errors.cpf_cnpj);
         alert(respostaErro.data.errors.email);
+        alert(respostaErro.data.errors.password);
     }else{
-        alert('Aceite os termos de uso!')
+        alert('Aceite os termos de uso!');
     }
 }
     
