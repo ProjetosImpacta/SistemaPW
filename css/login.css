@@ -3,10 +3,12 @@ body{
     color: rgb(165, 21, 43);
     background-image: url(../view/img/kittydelivery.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
 div{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #f5f2f0;
     position: absolute;
     top: 15%;
     left: 60%;    
@@ -20,8 +22,9 @@ input{
     font-size: 15px;
     border-radius: 15px;
 }
+
 button{
-    background-color: rgb(165, 21, 43);
+    background-color:  #BA424E;
     border: none;
     color: white;
     font-family: 'Franklin Gothic Medium';
@@ -30,7 +33,7 @@ button{
     border-radius: 10px;
 }
 button:hover{
-    background-color: rgb(235, 69, 69);
+    background-color: rgb(165, 21, 43);
 }
 a{
     color: rgb(165, 21, 43);
@@ -57,5 +60,75 @@ a{
     button {
         padding: 18px;
         font-size: 18px;
+    }
+}
+
+
+  /* Estilos para celular. */
+@media (min-width: 0px) and (max-width: 767px) {
+    body {
+        font-family: 'Franklin Gothic Medium';
+        color: #532B36;
+        background-image: url(../view/img/kittycadastro.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    div {
+        display: grid;
+        place-items: center;
+        position: relative; 
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 70px;
+        border-radius: 30px; 
+        width: 100%;
+        max-width: 300px; 
+        background-color: #f5f2f0; 
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    input {
+        border:none;
+        outline: none;
+        font-size: 16px;
+        width: calc(100% - 20px);
+        padding: 16px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        transition: border-color 0.3s ease;
+        box-sizing: border-box;
+    }
+
+    button {
+        padding: 20px;
+        font-size: 50%;
+        padding: 10px 90px;
+        border-radius: 70px;
+        background-color: #BA424E;
+    }
+    button:hover{
+        background-color:  rgb(165, 21, 43);
+    }
+
+    h5 {
+        font-size: 14px; 
+        text-align: center; 
+    }
+
+    a {
+        color: #532B36; 
     }
 }
