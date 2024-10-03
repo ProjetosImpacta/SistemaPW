@@ -22,6 +22,7 @@ form{
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 15px;
+    max-width: 300px;
   
 }
 input{
@@ -104,6 +105,7 @@ custom{
         width: 60%;
         border-radius: 20px;
         box-shadow: none;
+        max-width: none;
     }
 
     input {
@@ -175,6 +177,7 @@ custom{
         width: 60%;
         border-radius: 20px;
         box-shadow: none;
+        max-width: none;
     }
 
     input {
