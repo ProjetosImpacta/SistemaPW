@@ -1,35 +1,42 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="shortcut icon" href="view/img/icone.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../css/endereco.css" media="screen" /> 
-</head>
-<body>
-
-    <form>
-        <label for="name">Titulo do endereço</label>
-        <input type="text">
-        <br><br>
-
-        <label for="cep">CEP</label>
-        <input type="number">
-        <br><br>
-
-        <label for="endereco">Rua/Avenida</label>
-        <input type="text">
-        <br><br>
-
-        <label for="number">Numero</label>
-        <input type="number">
-        <br><br>
-
-        <label for="complemento">Complemento</label>
-        <input type="text">
-        
-    </form>
-</body>
+<link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
 </html>
+    <head>
+        <title></title>
+   
+        <link rel="stylesheet" type="text/css" href="../css/index.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="../css/endereco.css" media="screen" />        
+    </head>
+    <body>
+        
+        <section class="form">
+            <div>
+                <form>
+                    <h1 style="text-align: center;">Cadastrar endereço</h1>
+
+                    <label for="title">Titulo</label>
+                    <input type="text" id="title" name="title" placeholder="Titulo..">
+
+                    <label for="cep">Cep</label>
+                    <input type="text" id="cep" name="cep" placeholder="Cep">
+
+                    <label for="address">Endereço</label>
+                    <input type="text" id="address" name="address" placeholder="Endereço">
+
+                    <label for="number">Numero</label>
+                    <input type="text" id="number" name="number" placeholder="Numero">
+
+                    <label for="complement">Complemento</label>
+                    <input type="text" id="complement" name="complement" placeholder="Completo">
+
+
+                    <input type="button" value="Submit" onclick="cadastroEndereco()">
+                </form>
+            </div>
+
+        </section>
+
+        <script src="../script/endereco.js"></script>
+
+    </body>
+</html>
+
