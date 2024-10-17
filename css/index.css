@@ -8,3 +8,353 @@
 body{
     font-family: var(--fontPadrao)
 }
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .promoImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 5px;
+  }
+  
+  body {
+    font-family: 'Franklin Gothic Medium';
+    margin: 0;
+    height: 100vh;
+    background-color: white;
+  }
+  
+  header {
+    background-color: #bc7c63;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+  }
+  
+  header img {
+    width: 150px;
+    height: auto;
+  }
+  
+  header nav {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .pesquisa input {
+    margin: auto;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    cursor: text;
+    font-family: 'Franklin Gothic Medium';
+    color: #A5152B;
+    width: 97%;
+    height: 50px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    border: 1px solid #C27A64;
+  }
+  
+  .pesquisa {
+    /* margin-top: 15px; */
+    background-color: #BC7C63;
+  }
+  
+  .qrCode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  
+  header button {
+    padding: 12px 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium';
+    color: #A5152B;
+    font-size: 18px;
+  }
+  
+  header button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .menu-container {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 25px 0;
+    background-color: #bc7c63;
+    font-size: 20px;
+  }
+  
+  .menu {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium';
+  }
+  
+  .menu:hover {
+    color: #A5152B;
+  }
+  
+  .promo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .promo-section picture {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .promo-section picture img {
+    max-width: 100%;
+    width: 1350px;
+    height: auto;
+    display: block;
+    border-radius: 40px;
+    margin: 50px 0;
+  }
+  
+  .side-menu {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+    width: 75%;
+    
+  }
+
+  
+  .category {
+    width: 30%;
+    padding: 20px;
+    background-color: #e6cec4;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .category:nth-child(1) {
+    background-color: #ED9374;
+  }
+  
+  .category:nth-child(2) {
+    background-color: #B1BE7B;
+  }
+  
+  .category:nth-child(3) {
+    background-color: #D66C9E;
+  }
+  
+  .category:nth-child(4) {
+    background-color: #BA414E;
+  }
+  
+  .category:nth-child(5) {
+    background-color: #B180C2;
+  }
+  
+  .category:nth-child(6) {
+    background-color: #7FAADD;
+  }
+  
+  
+  .category:hover {
+    background-color: #FDABA5;
+    color: white;
+  
+  }
+  
+  .footer {
+    background-color: #BC7C63;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+  }
+  .footer div {
+    width: 10%;
+  }
+  .footer div a { /*texos*/
+    color: white;
+    text-decoration:none;
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .footer .logo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .logo img {
+    height: 50px;
+  }
+  
+  
+  /* Responsividade: */
+  /* Celular */
+  @media (min-width: 320px) and (max-width: 414px) {
+    body {
+      font-family: 'Franklin Gothic Medium';
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      /* background-color: #e6cec4; */
+    }
+  
+  
+    .promo-section picture img {
+      max-width: 100%;
+      width: 1350px;
+      height: auto;
+      display: block;
+    }
+  
+    .side-menu {
+      margin: 20px 0;
+      text-align: center;
+    }
+  
+    .categories {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 20px;
+      background-color: white;
+    }
+  
+    .category {
+      width: 30%;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border-radius: 20px;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+  
+    header nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+  
+    .pesquisa input {
+      width: 95%;
+      height: 35px;
+    }
+  
+    .category {
+      width: calc(100% - 20px);
+      margin-bottom: 10px;
+    }
+  
+    footer {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+  
+  }
+  
+  /* Tablet */
+  @media (min-width: 768px) and (max-width: 1368px) {
+    body {
+      font-family: 'Franklin Gothic Medium';
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+  
+  
+    .promo-section picture img {
+      max-width: 100%;
+      width: 1350px;
+      height: auto;
+      display: block;
+  
+    }
+  
+    .side-menu {
+      margin: 20px 0;
+      text-align: center;
+    }
+  
+    .categories {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 20px;
+      background-color: white;
+    }
+  
+    .category {
+      width: 30%;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border-radius: 20px;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+  
+    header nav {
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+  
+    .pesquisa input {
+      width: 80%;
+      height: 36px;
+    }
+  
+    .category {
+      width: calc(25% - 15px);
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  
+    footer {
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  
+  }
+  
