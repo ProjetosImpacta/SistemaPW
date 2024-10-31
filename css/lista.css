@@ -1,0 +1,15 @@
+.content_table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+tr, th{
+    border: solid 1px black;
+}
