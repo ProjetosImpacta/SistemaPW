@@ -35,6 +35,7 @@ async function mostrar_enderecos() {
     console.log(`Erro: ${api.status}`);
     alert(`Erro: ${api.status}`);
   }
+  //estou jantando
 }
 function atualizarEndereco(titulo, cep, address, number, complement){
 
@@ -51,7 +52,7 @@ document.getElementById('ModalComplement').value = complement
 function substituirEndereco(atualizarEndereco){
 
 
-  
+
 }
 
 
