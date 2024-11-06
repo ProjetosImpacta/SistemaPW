@@ -27,7 +27,7 @@ async function mostrar_enderecos() {
           <td>${endereco.address}</td>
           <td>${endereco.number}</td>
           <td>${endereco.complement}</td>
-          <td><button onclick='modaOpenAtt("${endereco.title}" , "${endereco.cep}" , "${endereco.address}" , "${endereco.number}", "${endereco.complement}", "${endereco.id}")'>Atualizar </button></td>
+          <td><button class="btn btn-success" onclick='modaOpenAtt("${endereco.title}" , "${endereco.cep}" , "${endereco.address}" , "${endereco.number}", "${endereco.complement}", "${endereco.id}")'>Atualizar </button></td>
         </tr>
       `;
     });
