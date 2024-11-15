@@ -28,8 +28,9 @@ async function mostrar_enderecos() {
         <td>${endereco.complement}</td>
         <td>
             <button onclick='modaOpenAtt("${endereco.title}", "${endereco.cep}", "${endereco.address}", "${endereco.number}", "${endereco.complement}", "${endereco.id}")'>Atualizar</button>
-            <button onclick='abrirModalDelete("${endereco.id}")'>Excluir</button>
         </td>
+        <td> <button onclick='abrirModalDelete("${endereco.id}")'>Excluir</button>
+        </td> 
     </tr>
 `;
     });
