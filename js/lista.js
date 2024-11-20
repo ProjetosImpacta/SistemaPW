@@ -1,5 +1,4 @@
 
-
 async function mostrar_enderecos() {
   const url = "https://go-wash-api.onrender.com/api/auth/address";
   const userData = JSON.parse(localStorage.getItem('userData'));
@@ -21,6 +20,7 @@ async function mostrar_enderecos() {
     corpoTabela.innerHTML = "";
     resposta.data.forEach(endereco => {
       corpoTabela.innerHTML += `
+
         <tr>
           <td>${endereco.title}</td>
           <td>${endereco.cep}</td>
@@ -30,6 +30,7 @@ async function mostrar_enderecos() {
           <td><button class="btn btn-success" onclick='modaOpenAtt("${endereco.title}" , "${endereco.cep}" , "${endereco.address}" , "${endereco.number}", "${endereco.complement}", "${endereco.id}")'>Atualizar </button></td>
         </tr>
       `;
+
     });
 
   } else {
@@ -92,4 +93,34 @@ async function atualizarEndereco(){
 
 }
 
+function abrirModalDelete(id) {
+  document.getElementById('modalIdDelete').value = id;
+  $('#ModalDelete').modal('show');
+}
+
+async function deletarEndereco() {
+  const userData = JSON.parse(localStorage.getItem('userData'));
+  const id = document.getElementById('modalIdDelete').value;
+  
+  const urlDelete = "https://go-wash-api.onrender.com/api/auth/address/" + id;
+
+  let api = await fetch(urlDelete, {
+      method: "DELETE",
+      headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer " + userData.access_token,
+      },
+  });
+
+  if (api.ok) {
+      console.log('Endereço excluído com sucesso');
+      $('#ModalDelete').modal('hide');
+      mostrar_enderecos(); // Atualiza a lista de endereços
+  } else {
+      console.log(`Erro ao excluir: ${api.status}`);
+      alert(`Erro: ${api.status}`);
+  }
+}
 mostrar_enderecos();
+
+
