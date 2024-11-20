@@ -16,7 +16,7 @@
         <img src="img/kittydeliverytexto-removebg-preview.png" alt="Kitty Delivery">
         <nav>
             <!-- <a href="login.html"><button>Entrar</button></a> -->
-            <a href="cadastro.html"><button>Cadastrar</button></a>
+            <a href="endereco.html"><button>Cadastrar Endereço</button></a>
         </nav>
     </header>
     <div class = "pesquisa">
@@ -25,7 +25,7 @@
 
     <div class="menu-container"> 
         <a href="#" class="menu">Home</a>
-        <a href="#" class="menu">Doces</a>  
+        <a href="home.html" class="menu">Doces</a>  
         <a href="#" class="menu">Lanches</a>  
         <a href="#" class="menu">Japonesa</a>  
         <a href="#" class="menu">Coreana</a>  
@@ -43,7 +43,7 @@
             </form> -->
 
             <div class="content_table">
-                <table id="tabela-usuarios" class="table table-striped mt-4">
+                <table id="tabela-usuarios" class="table table-striped mt-4" style="width: 85%;">
                     <thead>
                         <tr>
                             <th>Titulo</th>
@@ -72,22 +72,23 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <input type="hidden" id="modalIdEndereco">
-                <label for="title">Titulo</label>
-                <input type="text" id="ModalTitulo" name="title" placeholder="Titulo"/>
-                <br>
-                <label for="cep">Cep</label>
-                <input type="text" id="ModalCep" name="cep" placeholder="Cep"/>
-                <br>
-                <label for="address">Endereço</label>
-                <input type="text" id="ModalAddress" name="address" placeholder="Endereço"/>
-                <br>
-                <label for="number">Numero</label>
-                <input type="text" id="ModalNumber" name="number" placeholder="Numero"/>
-                <br>
-                <label for="complement">Complemento</label>
-                <input type="text" id="ModalComplement" name="number" placeholder="Complement"/>
-                <br>
+                <div class="formsModal" style="display: flex; flex-direction: column;">
+                    <input type="hidden" id="modalIdEndereco">
+                    <label for="title">Titulo</label>
+                    <input type="text" id="ModalTitulo" name="title" placeholder="Titulo" class="form-control"/>
+                    <br>
+                    <label for="cep">Cep</label>
+                    <input type="text" id="ModalCep" name="cep" placeholder="Cep" class="form-control"/>
+                    <br>
+                    <label for="address">Endereço</label>
+                    <input type="text" id="ModalAddress" name="address" placeholder="Endereço" class="form-control"/>
+                    <br>
+                    <label for="number">Numero</label>
+                    <input type="text" id="ModalNumber" name="number" placeholder="Numero" class="form-control"/>
+                    <br>
+                    <label for="complement">Complemento</label>
+                    <input type="text" id="ModalComplement" name="number" placeholder="Complement" class="form-control"/>
+                </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>

@@ -20,19 +20,17 @@ async function mostrar_enderecos() {
     corpoTabela.innerHTML = "";
     resposta.data.forEach(endereco => {
       corpoTabela.innerHTML += `
-    <tr>
-        <td>${endereco.title}</td>
-        <td>${endereco.cep}</td>
-        <td>${endereco.address}</td>
-        <td>${endereco.number}</td>
-        <td>${endereco.complement}</td>
-        <td>
-            <button onclick='modaOpenAtt("${endereco.title}", "${endereco.cep}", "${endereco.address}", "${endereco.number}", "${endereco.complement}", "${endereco.id}")'>Atualizar</button>
-        </td>
-        <td> <button onclick='abrirModalDelete("${endereco.id}")'>Excluir</button>
-        </td> 
-    </tr>
-`;
+
+        <tr>
+          <td>${endereco.title}</td>
+          <td>${endereco.cep}</td>
+          <td>${endereco.address}</td>
+          <td>${endereco.number}</td>
+          <td>${endereco.complement}</td>
+          <td><button class="btn btn-success" onclick='modaOpenAtt("${endereco.title}" , "${endereco.cep}" , "${endereco.address}" , "${endereco.number}", "${endereco.complement}", "${endereco.id}")'>Atualizar </button></td>
+        </tr>
+      `;
+
     });
 
   } else {
